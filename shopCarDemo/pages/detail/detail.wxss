@@ -1,0 +1,55 @@
+/* pages/detail/detail.wxss */
+.hd_img{
+    width: 100%;
+    height: 1030rpx; 
+}
+.hd_img image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ad_img{
+    width: 100%;
+    height: 110rpx;
+}
+.ad_img image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.goodIfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40rpx;
+}
+.goodIfo .title{
+    font-size: 38rpx;
+    margin: 30rpx 0;
+}
+.goodIfo .detail{
+    font-size: 24rpx;
+    margin-bottom: 80rpx;
+}
+.goodIfo .price{
+    color: #ff6700;
+    margin-bottom: 50rpx;
+}
+.joinCart{
+    width: 50%;
+    margin: 20rpx auto;
+}
+
+.aboutShare{
+    width: 100%;
+    margin: 40rpx 0 10rpx 0;
+    clear: both;
+    height: 92rpx;
+}
+.aboutShare .left{
+    width: 50%;
+    float: left;
+}
+.aboutShare .right{
+    width: 50%;
+    float: right;
+}

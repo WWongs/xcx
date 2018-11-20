@@ -1,0 +1,24 @@
+<!-- pages/detail/detail.wxml -->
+<!-- listinfo  title price -->
+<view class="hd_img">
+    <image src="{{ initGoodData.src }}" />
+</view>
+
+<view class="ad_img">
+    <image src="/img/detail/another1.jpg" />
+</view>
+
+<view class="goodIfo">
+    <text class='title'>{{ initGoodData.title }}</text>
+    <text class='detail'>{{ initGoodData.listinfo }}</text>
+    <text class='price'>{{ initGoodData.price }} ￥</text>
+</view>
+
+<view class="joinCart">
+   <button type="primary" disabled="{{ isJoin }}" bindtap="addShopCar">加入购物车</button>
+</view>
+
+<view class="aboutShare">
+    <button class="left" bindtap="shareToApp">分享到朋友圈</button>
+    <button class="right" open-type="share">分享给好友</button>
+</view>

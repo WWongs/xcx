@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lists/lists",
+    "pages/detail/detail",
+    "pages/shopcar/shopcar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#489B81",
+    "navigationBarTitleText": "WELCOME",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/lists/lists",
+      "text": "推荐",
+      "iconPath": "/img/icon/recommend.png",
+      "selectedIconPath": "/img/icon/recommend_on.png"
+    },
+    {
+      "pagePath": "pages/shopcar/shopcar",
+      "text": "购物车",
+      "iconPath": "/img/icon/shopcart.png",
+      "selectedIconPath": "/img/icon/shopcart_on.png"
+    }    
+  ]
+  }
+}

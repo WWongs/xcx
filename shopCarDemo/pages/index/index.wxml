@@ -1,0 +1,11 @@
+<view class="container">
+  <image src='{{ user.userAvatar }}' class="avatar"></image>
+  <button bindgetuserinfo="callBackGetUserIfo" open-type="getUserInfo" wx:if="{{ user.isRoot }}">
+    开启程序
+  </button>
+  <text class="username">Hey {{ user.userName }}</text>
+  <view class="begin" wx:if="{{ user.isBegin }}" bindtap="openPro">
+    <text>开启商城之旅</text>
+    <navigator url="/pages/list/list"></navigator>
+  </view>
+</view>

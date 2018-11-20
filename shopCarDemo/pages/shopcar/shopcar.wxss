@@ -1,0 +1,121 @@
+/* pages/car/car.wxss */
+.nullTips{
+    display: flex;
+}
+.nullTips image{
+    display: block;
+    width: 66rpx;
+    height: 66rpx;
+    margin: 20rpx 10rpx 0 20rpx;
+}
+.nullTips text{
+    font-size: 30rpx;
+    line-height: 110rpx;
+}
+.shopCar{
+    padding: 40rpx 30rpx;
+}
+.shopCar .item{
+    margin-bottom: 50rpx;
+    position: relative;
+}
+.shopCar .item .hd{
+    /* display: flex; */
+    height: 55rpx;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+}
+.shopCar .item .hd text{
+    font-size: 30rpx;
+    float: left;
+}
+.shopCar .item .hd image{
+    display: block;
+    width: 56rpx;
+    height: 56rpx;
+    float: right;
+}
+.shopCar .item .bd{
+    display: flex;
+    align-items: center;
+    height: 226rpx;
+    background-color: #f5f5f5;
+}
+.shopCar .item .bd image{
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+    margin-left: 20rpx;
+}
+.shopCar .item .bd .detail{
+    height: 100%;
+    margin-left: 50rpx;
+}
+.shopCar .item .bd .detail .detail_title{
+    font-size: 30rpx;
+}
+.shopCar .item .bd .detail .detail_fd{
+    position: absolute;
+    width: 100%;
+    bottom: 20rpx;
+}
+.shopCar .item .bd .detail .detail_fd .left{
+    float: left;
+    font-size: 30rpx;
+    color: #ff6700;
+    line-height: 50rpx;
+    margin-right: 60rpx;
+}
+.shopCar .item .bd .detail .detail_fd .right{
+    display: flex;
+}
+.shopCar .item .bd .detail .detail_fd .right text{
+    /* width: 20rpx; */
+    display: block;
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+    border: 1px solid #ccc;
+}
+.shopCar .item .bd .detail .detail_fd .right input{
+    /* display: block; */
+    box-sizing: border-box;
+    width: 50rpx;
+    height: 55rpx;
+    font-size: 30rpx;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.checkMoney{
+    display: flex;
+    height: 100rpx;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    background-color: #fff;
+}
+.checkMoney .checkbox{
+    font-size: 28rpx;
+    margin-left: 30rpx;
+}
+.checkMoney .tips{
+    font-size: 28rpx;
+    margin-left: 30rpx;
+}
+.checkMoney .toShop{
+    flex: 1;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 28rpx;
+    background-color: #eee;
+    margin-left: 30rpx;
+}
+.checkMoney .price{
+    color: #e4452a;
+    
+}

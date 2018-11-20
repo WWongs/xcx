@@ -1,0 +1,23 @@
+<!-- pages/list/list.wxml -->
+<view class="bannerList">
+    <swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000" class="banner" indicator-active-color="white">
+        <block wx:for="{{ banner }}" wx:key="index">
+            <swiper-item>
+                <image src="{{ item }}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<!-- bannerList -->
+
+<view class="goodItem" wx:for="{{ allGoodLists }}" wx:key="index">
+    <image class="headerImg" wx:for="{{ item.single_img }}" wx:key="index" src="{{ item.src }}" />
+    <view class="item">
+        <view wx:for="{{ item.imglist }}" wx:key="index" class="good {{ index % 2 == 0 ? '' : 'goodRight' }}" bindtap="selectGoodToDetail" data-item="{{item}}">
+            <image src="{{ item.src }}" />
+            <text class="goodIfo">{{ item.title }}</text>
+        </view>
+    </view>
+</view>
+<!-- goodItem -->
+
