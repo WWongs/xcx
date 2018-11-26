@@ -1,0 +1,30 @@
+<!-- pages/movie/movie.wxml -->
+<view class="index">
+    <view class="banner">
+        <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" indicator-active-color="white">
+            <block wx:for="{{ toDayMovieData }}" wx:key="index">
+                <swiper-item>
+                    <image src="{{ item.images.large }}" class="slide-image" width="355" height="150" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="toDay">
+        <text class="title">正在热映的电影</text>
+        <scroll-view scroll-x="true" style="">
+            <view class="item" wx:for="{{ toDayMovieData }}" wx:key="index" id="{{ item.id }}" bindtap="toDetail">
+                <image src="{{ item.images.large }}" />
+                <text class="hidden">{{ item.title }}</text>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="top250">
+        <text class="title">豆瓣TOP250影片</text>
+        <scroll-view scroll-x="true" style="">
+            <view class="item" wx:for="{{ topMovieData }}" wx:key="index" id="{{ item.id }}" bindtap="toDetail">
+                <image src="{{ item.images.large }}" />
+                <text class="hidden">{{ item.title }}</text>
+            </view>
+        </scroll-view>
+    </view>
+</view>

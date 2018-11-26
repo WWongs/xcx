@@ -1,0 +1,88 @@
+/* pages/search/search.wxss */
+.header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.header .search {
+    width: 100%;
+    padding: 20rpx 40rpx;
+    color: #666;
+    font-size: 38rpx;
+    text-align: center;
+}
+
+.list scroll-view{
+    height: 977rpx;
+}
+
+.list .loading {
+    background-color: rgba(255, 255, 255, .0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list .loading image {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 20rpx;
+}
+
+.list .loading text {
+    vertical-align: middle;
+    font-size: 22rpx;
+}
+
+.list .item {
+    display: flex;
+    padding: 20rpx 40rpx;
+    border-bottom: 1rpx solid #eee;
+    cursor: pointer;
+
+}
+
+.list .item .poster {
+    width: 128rpx;
+    height: 168rpx;
+    margin-right: 20rpx;
+
+}
+
+.list .item .meta {
+    flex: 1;
+}
+
+.list .item .meta .title {
+    font-size: 32rpx;
+}
+
+.list .item .meta .title,
+.list .item .meta .sub-title {
+    display: block;
+    margin-bottom: 15rpx;
+}
+
+.list .item .meta .sub-title {
+    font-size: 22rpx;
+    color: #c0c0c0;
+}
+
+.list .item .meta .artists {
+    font-size: 24rpx;
+    color: #999;
+}
+
+.list .item .rating text {
+    display: inline-block;
+    width: 40rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(247, 76, 49, 0.8);
+    color: #fff;
+    padding: 10rpx;
+    border-radius: 20rpx;
+}

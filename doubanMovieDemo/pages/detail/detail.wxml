@@ -1,0 +1,19 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+    <image class="bgImg" src="{{ detailData.images.large }}" />
+    <view class="container">
+        <view class="head">
+            <image src="{{ detailData.images.large }}" />
+            <text class="title">{{ detailData.title }}</text>
+            <view class="konw">
+                <text >评分：{{ detailData.rating.average }}</text>
+                <text >导演：{{ detailData.casts[0].name }}</text>
+                <text >主演：{{ detailData.writers[0].name }}</text>
+            </view>
+        </view>
+        <view class="body">
+            <text class="title">摘要:</text>
+            <text class="content">{{ detailData.summary }}</text>
+        </view>
+    </view>
+</view>

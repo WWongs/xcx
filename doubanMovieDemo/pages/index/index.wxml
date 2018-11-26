@@ -1,0 +1,5 @@
+<!--pages/index/index.wxml-->
+<view class='index'>
+   <image src='https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539667115.jpg'></image>
+   <button class="toMoviePage" wx:if="{{ getRoot }}" bindtap="toMoviePage">开始体验</button>
+</view>
